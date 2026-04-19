@@ -1,0 +1,15 @@
+type Review = record {
+  id : nat;
+  author : principal;
+  title : text;
+  rating : nat;
+  content : text;
+  timestamp : int;
+};
+
+service : {
+  submitReview : (text, nat, text) -> (nat);
+  getAllReviews : () -> (vec Review) query;
+  getReviewsByRating : (nat) -> (vec Review) query;
+  getReviewCount : () -> (nat) query;
+}

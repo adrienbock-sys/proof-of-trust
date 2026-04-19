@@ -1,0 +1,17 @@
+{
+  "canisters": {
+    "backend": {
+      "type": "motoko",
+      "main": "src/main.mo"
+    },
+    "frontend": {
+      "type": "assets",
+      "source": ["frontend/public"]
+    }
+  },
+  "networks": {
+    "local": {
+      "bind": "127.0.0.1:8000"
+    }
+  }
+}
